@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: springai
+
+  datasource:
+    url: jdbc:postgresql://localhost:5442/ai_research
+    username: ai_research
+    password: ai_research
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 5000
